@@ -1,7 +1,7 @@
 $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 var currentMoment = moment();
 
-$("#timeBlocks tr").each(function () {
+$("#timeBlocks tr td input").each(function () {
     if(($(this).attr("data-hour"))<currentMoment.hour()){
         $(this).addClass("past");
     }
